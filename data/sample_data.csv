@@ -1,0 +1,8 @@
+record_id,record_type,source,text
+FIR001,FIR,Police Report,"Rahul Sharma was seen travelling with Amit Verma in vehicle UP53AB1234 near Gorakhpur Railway Station."
+FIR002,FIR,Police Report,"Amit Verma met Suresh Kumar at Location X on 12 August."
+CDR001,CDR,Call Record,"Rahul Sharma called Amit Verma 14 times on 12 August."
+CDR002,CDR,Call Record,"Amit Verma called Suresh Kumar 8 times on 13 August."
+FIN001,FINANCIAL,Bank Record,"Rahul Sharma transferred 80000 INR to Amit Verma."
+FIN002,FINANCIAL,Bank Record,"Amit Verma transferred 50000 INR to Suresh Kumar."
+SUR001,SURVEILLANCE,Surveillance Report,"Rahul Sharma and Amit Verma were observed together at Location X."
