@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import { API_BASE_URL } from "./apiConfig";
+
 import Patterns from "./Patterns";
 
 import ReactFlow, {
@@ -78,19 +80,19 @@ function App() {
       ] = await Promise.all([
 
         axios.get(
-          "http://127.0.0.1:8000/api/summary"
+          `${API_BASE_URL}/api/summary`
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/api/key-entities"
+          `${API_BASE_URL}/api/key-entities`
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/api/network"
+          `${API_BASE_URL}/api/network`
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/api/correlations"
+          `${API_BASE_URL}/api/correlations`
         ),
 
       ]);
@@ -182,7 +184,7 @@ function App() {
 
       const response = await axios.post(
 
-        "http://127.0.0.1:8000/api/upload-fir",
+        `${API_BASE_URL}/api/upload-fir`,
 
         formData,
 
@@ -269,7 +271,7 @@ function App() {
 
       const response = await axios.get(
 
-        `http://127.0.0.1:8000/api/evidence/${encodeURIComponent(
+        `${API_BASE_URL}/api/evidence/${encodeURIComponent(
           entityName
         )}`
 
