@@ -468,7 +468,8 @@ function App() {
 
         <div className="logo">
           <img src="/nyay-drishti-logo.png"
-            className="nyay-logo"/>
+            className="nyay-logo"
+            alt="Nyay Drishti"/>
         </div>
 
 
