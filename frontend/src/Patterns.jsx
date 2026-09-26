@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import API_BASE_URL from "./apiConfig";
 
 function Patterns() {
   const [patterns, setPatterns] = useState(null);
@@ -8,7 +9,7 @@ function Patterns() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/patterns")
+      .get(`${API_BASE_URL}/api/patterns`)
       .then((response) => {
         setPatterns(response.data.patterns || {});
         setLoading(false);
